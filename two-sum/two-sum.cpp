@@ -8,7 +8,7 @@ public:
             {
                 return vector<int> {map[target - nums[i]], i};
             }
-            map.insert({nums[i], i});
+            map[nums[i]] = i;
         }
         return vector<int>{};
     }
